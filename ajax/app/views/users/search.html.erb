@@ -1,0 +1,11 @@
+<nav class="users-search">
+  <input type="text" name="user[username]" value="">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+  <input type="submit" name="" value="Search Users">
+  <% @users.each do |user| %>
+  <ul>
+    <%= user.username %>
+  </ul>
+  <% end %>
+</nav>
+
